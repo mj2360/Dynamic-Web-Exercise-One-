@@ -7,3 +7,5 @@ function ArticleListing(){
         </div>
     );
 }
+
+export default ArticleListing; 
