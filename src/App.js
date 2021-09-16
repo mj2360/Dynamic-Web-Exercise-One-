@@ -15,6 +15,7 @@ function App() {
          <Route path="/article">
             <Article />
          </Route>
+         {/* this is the home path, which will take you to ArticleListing path  */}
          <Route path="/">
             <ArticleListing />
          </Route>
