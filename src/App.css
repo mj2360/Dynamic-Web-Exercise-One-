@@ -10,17 +10,23 @@
     margin: 0; 
 }
 
+.ArticleListingHeader{
+    margin: 60px 0; 
+}
+
 .ArticleCardWrapper{
     align-items: flex-start;
     border: 2px solid black;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 48px;
     padding: 25px; 
 }
 
 .ArticleCardImage{
     flex-basis: 30%; 
+    padding-right: 20px; 
 }
 
 .ArticleCardImage img{
@@ -35,16 +41,19 @@
 .ArticleCardTitle{
     font-size: 36px;
     font-weight: bold; 
+    margin: 0; 
 }
 
 .ArticleCardDate{
+    font-size: 20px;
+    margin: 10px; 
 
 }
 
 .ArticleCardBlurb{
-
+    font-size: 20px;
 }
 
-.ArticleCardLink{
+.ArticleCardLink a{
     font-weight: bold; 
 }
