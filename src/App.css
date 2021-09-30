@@ -47,7 +47,6 @@
 .ArticleCardDate{
     font-size: 20px;
     margin: 10px; 
-
 }
 
 .ArticleCardBlurb{
@@ -55,5 +54,43 @@
 }
 
 .ArticleCardLink a{
+    font-weight: bold; 
+}
+
+.ArticleHeader{
+    background-color: grey; 
+    padding: 40px 0; 
+}
+
+.ArticleHeaderBlurb {
+    font-size: 16px; 
+    line-height: 1.5; 
+}
+
+.ArticleHeaderText{
+    margin: 0 auto; 
+    max-width: 640px;
+    padding: 0 25px; 
+}
+
+.ArticleText {
+    margin: 0 auto; 
+    max-width: 640px;
+}
+
+.ArticleText p {
+    font-size: 16px; 
+    line-height: 1.5;
+}
+
+.ArticleText h2 {
+    font-size: 36px; 
+    font-weight: bold;
+    margin: 0; 
+    margin-bottom: 20px; 
+}
+
+.ArticleText h3 {
+    font-size: 24px; 
     font-weight: bold; 
 }

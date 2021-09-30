@@ -12,10 +12,9 @@ function App() {
   return (
      <Router>
        <Switch>
-         <Route path="/article">
+         <Route path="/article/:id">
             <Article />
          </Route>
-         {/* this is the home path, which will take you to ArticleListing path  */}
          <Route path="/">
             <ArticleListing />
          </Route>
