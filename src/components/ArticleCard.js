@@ -15,7 +15,7 @@ function ArticleCard({article}){ //here you are passing down single prop -> arti
                 <p className="ArticleCardDate">{dateString}</p>
                 <p className="ArticleCardBlurb">{article.blurb}</p>
                 <p className="ArticleCardLink"> 
-                    <a href={`/articles/${article.id}`}>Read More</a>
+                    <a href={`/article/${article.id}`}>Read More</a>
                 </p>
             </div>
         </div>

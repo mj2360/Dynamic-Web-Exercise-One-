@@ -14,10 +14,18 @@ function Article(){
 
     const newDate = new Date();
     const dateString = newDate.toDateString();
+
 if(!id) return null;
+
     return(
         <main>
-            <section className="ArticleHeader" style={{backgroundImage: "grey"}}>
+            <section className="ArticleHeader" 
+            style={{
+                backgroundImage: `url('${article.image && article.image.url}')`, 
+                backgroundPosition: "center",
+                backgroundSize: "cover",
+                }}
+                >
                 <div className="ArticleHeaderText">
                     <h1 className="HeaderOneStyle">{article.title}</h1>
                     <p className="ArticleCardDate">{dateString}</p>
@@ -27,7 +35,17 @@ if(!id) return null;
             <section className="ArticleText">
                 {article.articleText &&
                     article.articleText.map((text,i) => {
-                        return <p key={i}>{text.data}</p>;
+                        const type = text.type;
+                        switch(type){
+                            case 'p':
+                                return <p key={i}>{text.data}</p>;
+                            case 'h2':
+                                return <h2 key={i}>{text.data}</h2>;
+                            case 'h3':
+                                 return <h3 key={i}>{text.data}</h3>;
+                            default:
+                                return <p key={i}>{text.data}</p>;
+                        }
                     })}
             </section>
         </main>
